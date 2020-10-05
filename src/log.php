@@ -8,14 +8,14 @@ if (PHP_SAPI !== 'cli') {
 $source = '';
 
 // temp error log example: /home/td/log/error_tmp.log
-$dest = __DIR__ . '/temp.log';
+$dest = __DIR__ . '/../temp.log';
 
 // example hook: https://hooks.slack.com/services/***/****/****
 // more details: https://api.slack.com/messaging/webhooks
 $hook = '';
 
-// slack channel
-$channel = "#test_channel";
+// slack channel example: #channel
+$channel = "";
 
 exec('comm -13 ' . $dest . ' ' . $source . '  2>&1', $output);
 
